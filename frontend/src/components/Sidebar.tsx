@@ -15,7 +15,7 @@ export function Sidebar({ open, onClose }: Props) {
   const { state } = useProgress()
   const initialOpenModule = deriveOpenModule(location.pathname)
   const [openModules, setOpenModules] = useState<Set<ModuleId>>(
-    () => new Set(initialOpenModule ? [initialOpenModule] : ['p2p-dht']),
+    () => new Set(initialOpenModule ? [initialOpenModule] : ['foundations']),
   )
 
   function toggleModule(id: ModuleId) {
@@ -32,9 +32,9 @@ export function Sidebar({ open, onClose }: Props) {
       {open && <div className="sidebar-backdrop" onClick={onClose} />}
       <aside className={clsx('sidebar', { open })}>
         <div className="sidebar__brand">
-          <span className="sidebar__brand-mark">P2P</span>
+          <span className="sidebar__brand-mark">DDO</span>
           <div>
-            <div className="sidebar__brand-title">P2P & Blockchain</div>
+            <div className="sidebar__brand-title">Datacenter Design</div>
             <div className="sidebar__brand-subtitle">Sito di studio · UniPi</div>
           </div>
         </div>
@@ -152,6 +152,8 @@ function shortTitle(title: string): string {
 }
 
 function deriveOpenModule(pathname: string): ModuleId | null {
-  const match = pathname.match(/^\/modulo\/(p2p-dht|bitcoin|ethereum|apps)/)
+  const match = pathname.match(
+    /^\/modulo\/(foundations|power-cooling|network|storage|compute|virt-cloud)/,
+  )
   return (match?.[1] as ModuleId | undefined) ?? null
 }

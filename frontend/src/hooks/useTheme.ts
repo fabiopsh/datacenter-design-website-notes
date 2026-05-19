@@ -3,7 +3,7 @@ import { useLocalStorage } from './useLocalStorage'
 
 export type Theme = 'light' | 'dark'
 
-const KEY = 'p2p-study:theme'
+const KEY = 'ddo-study:theme'
 
 function preferredTheme(): Theme {
   if (typeof window === 'undefined') return 'light'

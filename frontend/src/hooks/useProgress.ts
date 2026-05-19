@@ -106,7 +106,14 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           },
         }
         const allPassed = (
-          ['p2p-dht', 'bitcoin', 'ethereum', 'apps'] as const
+          [
+            'foundations',
+            'power-cooling',
+            'network',
+            'storage',
+            'compute',
+            'virt-cloud',
+          ] as const
         ).every((m) => (moduleQuizzes[m]?.score ?? 0) >= 0.8)
         if (allPassed) newBadges.add('completionist')
         return {

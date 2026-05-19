@@ -69,7 +69,7 @@ export function QuizRunner({ moduleId, questions, backTo }: Props) {
             {stored ? ` · tentativi totali: ${stored.attempts}` : ''}
           </div>
           {score >= 1 && (
-            <p style={{ color: 'var(--mod-apps)', fontWeight: 600 }}>
+            <p style={{ color: 'var(--mod-virt-cloud)', fontWeight: 600 }}>
               🏆 Perfetto! +150 XP
             </p>
           )}

@@ -18,10 +18,12 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
 
-  --mod-p2p-dht: #5b8def;
-  --mod-bitcoin: #f7931a;
-  --mod-ethereum: #7b3ff2;
-  --mod-apps: #22a06b;
+  --mod-foundations: #5b8def;
+  --mod-power-cooling: #f7931a;
+  --mod-network: #22a06b;
+  --mod-storage: #ef4444;
+  --mod-compute: #7b3ff2;
+  --mod-virt-cloud: #06b6d4;
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -391,7 +393,7 @@ h4 {
 }
 .sidebar__lesson.completed .sidebar__lesson-num::after {
   content: ' ✓';
-  color: var(--mod-apps);
+  color: var(--mod-network);
 }
 
 /* Burger menu button: visible only on mobile. Without this rule, the inherited

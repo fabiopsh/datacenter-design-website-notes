@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(taskkill /F /IM node.exe)",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(\"killed\")",
+      "Bash(gh api *)",
+      "Bash(curl -s https://api.github.com/repos/fabiopsh/peer-to-peer-website-notes/contents/frontend/src/styles)",
+      "Bash(curl -s -o /tmp/orig-global.css https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/styles/global.css)",
+      "Bash(curl -s -o /tmp/orig-labs.css https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/styles/labs.css)",
+      "Bash(curl -s -o /tmp/orig-markdown.css https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/styles/markdown.css)",
+      "Bash(curl -s -o /tmp/orig-quiz.css https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/styles/quiz.css)",
+      "Read(//c/tmp/**)",
+      "Bash(diff /tmp/orig-global.css \"C:/Users/fabio/Documents/UNIPI - Project/datacenter-design-website-notes/frontend/src/styles/global.css\" | head -80)",
+      "Bash(curl -s https://api.github.com/repos/fabiopsh/peer-to-peer-website-notes/contents/frontend/src/routes)",
+      "Bash(curl -s -o /tmp/orig-Home.tsx https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/routes/Home.tsx)",
+      "Bash(curl -s -o /tmp/orig-ProgressPage.tsx https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/routes/ProgressPage.tsx)",
+      "Bash(curl -s -o /tmp/orig-ModulePage.tsx https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/routes/ModulePage.tsx)",
+      "Bash(curl -s -o /tmp/orig-LessonPage.tsx https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/routes/LessonPage.tsx)",
+      "Bash(curl -s -o /tmp/orig-LabPage.tsx https://raw.githubusercontent.com/fabiopsh/peer-to-peer-website-notes/main/frontend/src/routes/LabPage.tsx)",
+      "Bash(cp /tmp/orig-global.css \"C:/Users/fabio/Documents/UNIPI - Project/datacenter-design-website-notes/frontend/src/styles/global.css\")"
+    ]
+  }
+}
