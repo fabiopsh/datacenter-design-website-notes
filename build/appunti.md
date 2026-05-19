@@ -940,7 +940,7 @@ Uno switch moderno da data center non è un appliance speciale: è fondamentalme
 > - Il **Control Plane** (piano di controllo) è responsabile della _configurazione_, della _gestione_ e del _monitoraggio_. Qui risiedono la logica delle policy, i protocolli di routing, i contatori delle porte, il sistema operativo di rete.
 > - Il **Data Plane** (piano dati) è responsabile dell'_esecuzione_: riceve i pacchetti sulle porte ingress, determina la porta egress consultando le tabelle popolate dal control plane, e li instrada alla velocità del silicio.
 
-![Architettura SDN: separazione tra application layer, control plane e data plane (infrastructure layer)](images/Software-defined-networking-SDN-architecture-source-Open-Networking-Foundation-ONF1-36c6af.png)
+![Architettura SDN: separazione tra application layer, control plane e data plane (infrastructure layer)](images/SDN-architecture-ONF-36c6af.png)
 *Fig. — La separazione funzionale tra i piani di rete secondo l'Open Networking Foundation: application layer (policy e gestione), control plane (logica di routing) e infrastructure layer (forwarding a linerate nel silicio). Nello switch da data center moderno il management coincide tipicamente con il control plane.*
 
 ### Il Data Plane: Silicon Commodity

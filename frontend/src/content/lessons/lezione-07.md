@@ -39,7 +39,7 @@ Lo **switch di rete** — come qualsiasi dispositivo di comunicazione complesso 
 
 </div>
 
-![Architettura SDN: separazione tra application layer, control plane e data plane (infrastructure layer)](images/Software-defined-networking-SDN-architecture-source-Open-Networking-Foundation-ONF1-36c6af.png)
+![Architettura SDN: separazione tra application layer, control plane e data plane (infrastructure layer)](images/SDN-architecture-ONF-36c6af.png)
 *Fig. — La separazione funzionale tra i piani di rete secondo l'Open Networking Foundation: application layer (policy e gestione), control plane (logica di routing) e infrastructure layer (forwarding a linerate nel silicio). Nello switch da data center moderno il management coincide tipicamente con il control plane.*
 
 ### Il Data Plane: Silicon Commodity
